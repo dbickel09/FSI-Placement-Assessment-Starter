@@ -63,12 +63,10 @@ sugarMinusBtn.addEventListener('click', function() {
 })
 
 
-let qtyTotal = document.getElementById('qty-total')
-
-qtyTotal =
-
-
-    
+//qtyTotalDisplay = document.getElementById('qty-total')
+//qtyTotalDisplay.addEventListener('click', function() {
+    //qtyTotalDisplay = 3
+//)}
 
 
 
