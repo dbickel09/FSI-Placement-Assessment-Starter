@@ -63,10 +63,16 @@ sugarMinusBtn.addEventListener('click', function() {
 })
 
 
-
-
 let qtyTotal = document.getElementById('qty-total')
-qtyTotal.textContent = `${gb}`
+
+qtyTotal =
+
+
+    
+
+
+
+
    
     
 
