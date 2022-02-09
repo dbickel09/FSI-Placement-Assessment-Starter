@@ -7,10 +7,15 @@ let yourName = "Daniel Bickel" // HINT: Replace this with your own name!
 let gb = 0 // Gingerbread
 let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
+let totes = 0 // Total?
 
 // selecting the element with an id of credit
 const credit = document.querySelector('#credit')
 // selecting the element with an id of add-gb
+
+
+
+let qtyTotalDisplay = document.getElementById('qty-total')
 
 let gbPlusBtn = document.getElementById('add-gb')
 let gbMinusBtn = document.getElementById('minus-gb')
@@ -19,12 +24,14 @@ let gbQtyDisplay = document.getElementById('qty-gb')
 gbPlusBtn.addEventListener('click', function() {
     gb++
     gbQtyDisplay.textContent = `${gb}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
 })
 
 gbMinusBtn.addEventListener('click', function() {
     if (gb > 0) {
     gb--
     gbQtyDisplay.textContent = `${gb}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
     }
 })
 
@@ -36,12 +43,14 @@ let ccQtyDisplay = document.getElementById('qty-cc')
 ccPlusBtn.addEventListener('click', function() {
     cc++
     ccQtyDisplay.textContent = `${cc}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
 })
 
 ccMinusBtn.addEventListener('click', function() {
     if (cc > 0) {
     cc--
     ccQtyDisplay.textContent = `${cc}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
     }
 })
 
@@ -53,17 +62,18 @@ let sugarQtyDisplay = document.getElementById('qty-sugar')
 sugarPlusBtn.addEventListener('click', function() {
     sugar++
     sugarQtyDisplay.textContent = `${sugar}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
 })
 
 sugarMinusBtn.addEventListener('click', function() {
     if (sugar > 0) {
     sugar--
     sugarQtyDisplay.textContent = `${sugar}`
+    qtyTotalDisplay.textContent = `${gb + cc + sugar}`
     }
 })
 
 
-//qtyTotalDisplay = document.getElementById('qty-total')
 //qtyTotalDisplay.addEventListener('click', function() {
     //qtyTotalDisplay = 3
 //)}
